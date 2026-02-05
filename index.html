@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM_ 个人空间</title>
+
+    <!-- 页面描述，方便未来工具与搜索引擎识别 -->
+    <meta name="description" content="KM 的个人自动化与效率空间，聚焦 AHK v2 与 Python 工具与实践。">
+
+    <style>
+        /* =====================
+           Base
+        ===================== */
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+            margin: 0;
+        }
+
+        /* =====================
+           Layout
+        ===================== */
+        .container {
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* =====================
+           Typography
+        ===================== */
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .description {
+            color: #888;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-top: 20px;
+        }
+
+        /* =====================
+           Components
+        ===================== */
+        .btn-github {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .btn-github:hover {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        .status {
+            margin-top: 100px;
+            font-size: 0.7rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1>KM_</h1>
+        </header>
+
+        <section class="description">
+            这是我的个人自动化与效率中心。遵循「模块原则（Rule of Modularity）」，目前主要维护基于 AHK v2 与 Python 的效率工具集。
+        </section>
+
+        <a
+            href="https://github.com/wkm-sys"
+            target="_blank"
+            class="btn-github"
+        >
+            我的笔记仓库 →
+        </a>
+
+        <div class="status">
+            STATIC PAGE · GITHUB PAGES · MICHAEL
+        </div>
+    </main>
+
+</body>
+</html>
