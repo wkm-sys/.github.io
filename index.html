@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KM_ 个人空间</title>
 
-    <!-- 页面描述，方便未来工具与搜索引擎识别 -->
-    <meta name="description" content="KM 的个人自动化与效率空间，聚焦 AHK v2 与 Python 工具与实践。">
+    <meta name="description" content="KM 的个人自动化与效率空间">
 
     <style>
         /* =====================
@@ -19,7 +18,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 80px;
+            padding-top: 60px;
             margin: 0;
         }
 
@@ -28,7 +27,7 @@
         ===================== */
         .container {
             width: 90%;
-            max-width: 500px;
+            max-width: 520px;
         }
 
         .header {
@@ -41,47 +40,77 @@
            Typography
         ===================== */
         h1 {
-            font-size: 1.6rem;
-            font-weight: 300;
+            font-size: 1.8rem;
+            font-weight: 400;
             letter-spacing: 2px;
             margin: 0;
         }
 
         .description {
-            color: #888;
-            line-height: 1.6;
+            color: #aaa;
+            line-height: 1.7;
             font-size: 0.95rem;
             margin-top: 20px;
         }
 
         /* =====================
-           Components
+           Section Blocks
+        ===================== */
+        .block {
+            border-left: 1px solid #444;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .block span {
+            color: #bbb;
+        }
+
+        /* =====================
+           Button
         ===================== */
         .btn-github {
             display: inline-block;
-            margin-top: 40px;
-            padding: 12px 25px;
+            margin-top: 50px;
+            padding: 12px 26px;
             background: transparent;
             color: #fff;
-            border: 1px solid #555;
+            border: 1px solid #777;
             border-radius: 6px;
             text-decoration: none;
             font-size: 0.9rem;
-            transition: all 0.3s;
+            transition: all 0.25s ease;
         }
 
         .btn-github:hover {
             background: #fff;
             color: #000;
             border-color: #fff;
+            transform: translateY(-2px);
         }
 
+        /* =====================
+           Footer
+        ===================== */
         .status {
             margin-top: 100px;
             font-size: 0.7rem;
             color: #555;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+
+        /* =====================
+           Responsive
+        ===================== */
+        @media (max-width: 480px) {
+            body {
+                padding-top: 40px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
         }
     </style>
 </head>
@@ -92,13 +121,24 @@
             <h1>KM_</h1>
         </header>
 
-       <section class="description">
-            这是我的个人自动化与效率中心。遵循「模块原则（Rule of Modularity）」，目前主要维护基于 AHK v2 与 Python 的效率工具集。
+        <section class="description">
+            这是我的个人自动化与效率中心。目前专注于 <b>Linux (Armbian)</b> 环境下的系统精简与工程自动化，通过 <b>Shell (pwsh/zsh/bash)</b> 脚本驱动个人工作流。
         </section>
 
-        <section class="description" style="border-left: 1px solid #444; padding-left: 15px; margin-top: 25px;">
-            <span style="color: #bbb;">Current Project:</span> <b>HK-VAULT</b><br>
-            基于 A10 平台可利用特性，将闲置 iPhone7P 128G 重构为冷存储媒体节点，用于局域网环境下的临时和低频文件的SMB共享。探索旧设备在分布式存储架构中作为实验性边缘节点的可能性。
+        <section class="description block">
+            <span>Current Project:</span> <b>Home-Lab</b><br><br>
+
+            基于 Armbian 激活 RK322x Box，转化为轻量级 Linux 节点。从刷固件开始，实践分布式存储与无头服务器（Headless）的运维逻辑。<br><br>
+
+            通过 <b>Git</b> 配置管理 实现环境即代码（Environment as Code）的工程实践<br>
+            通过 <b>SSH</b> 与 <b>Tailscale</b> 构建安全的跨域连接<br>
+            通过 <b>rsync</b> 与 <b>rclone</b> 探索本地与云端的数据流转逻辑<br>
+        </section>
+
+        <section class="description block">
+            <span>Legacy Project:</span> <b>7Plus</b><br>
+
+            基于 A10 平台特性，将闲置 iPhone7 重构为冷存储媒体节点，用于局域网环境下的临时和低频文件的SFTP共享。探索旧设备在分布式存储架构中作为实验性边缘节点的可能性。
         </section>
 
         <a
@@ -106,11 +146,11 @@
             target="_blank"
             class="btn-github"
         >
-            我的笔记仓库 →
+            我的仓库 →
         </a>
 
         <div class="status">
-            STATIC PAGE · GITHUB PAGES · MICHAEL
+            STATIC PAGE · GITHUB PAGES · KM_
         </div>
     </main>
 
